@@ -6,7 +6,7 @@
 3. fill the info (use HarperDB) in .env.example and remove .example
 4. run npm start in frontend and backend folder
 
-# Technique in this project
+# Techniques in this project
 - frontend: React
 - backend: Node Express (planning turn to springboot in the future)
 - database: HarperDB (using SQL)
