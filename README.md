@@ -13,8 +13,8 @@
 
 # TODO-List
 - [X] Room's chat
-- [] Use LocalStorage to store before refresh state
-- [] Support Media
-- [] RWD
-- [] Can send private messages to specific user
-- [] Use SpringBoot implement backend
+- [ ] Use LocalStorage to store before refresh state
+- [ ] Support Media
+- [ ] RWD
+- [ ] Can send private messages to specific user
+- [ ] Use SpringBoot implement backend
