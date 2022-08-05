@@ -1,14 +1,15 @@
 import './App.css';
-import { useState } from 'react'; 
+import { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import io from 'socket.io-client'; 
+import io from 'socket.io-client';
 import Home from './pages/home';
+import Chat from './pages/chat';
 
 const socket = io.connect('http://localhost:4000'); //  -- our server will run on port 4000, so we connect to it from here
 
 function App() {
-  const [username, setUsername] = useState(''); 
-  const [room, setRoom] = useState(''); 
+  const [username, setUsername] = useState('');
+  const [room, setRoom] = useState('');
 
   return (
     <Router>
@@ -18,17 +19,21 @@ function App() {
             path='/'
             element={
               <Home
-                username={username} 
-                setUsername={setUsername} 
-                room={room} 
-                setRoom={setRoom} 
-                socket={socket} 
+                username={username}
+                setUsername={setUsername}
+                room={room}
+                setRoom={setRoom}
+                socket={socket}
               />
             }
           />
+          <Route
+            path='/chat'
+            element={<Chat username={username} room={room} socket={socket} />}
+          />
         </Routes>
       </div>
-    </Router>
+    </Router >
   );
 }
 
