@@ -17,7 +17,7 @@ const Home = ({ username, setUsername, room, setRoom, socket }) => {
     return (
         <div className={styles.container}>
             <div className={styles.formContainer}>
-                <h1>{`<>DevRooms</>`}</h1>
+                <h1>Real-Time-ChatRoom</h1>
                 <input
                     className={styles.input}
                     placeholder='Please input your username'
@@ -30,9 +30,13 @@ const Home = ({ username, setUsername, room, setRoom, socket }) => {
                 >
                     <option>-- Select Room --</option>
                     <option value='javascript'>JavaScript</option>
-                    <option value='node'>Node</option>
-                    <option value='express'>Express</option>
                     <option value='react'>React</option>
+                    <option value='java'>Java</option>
+                    <option value='python'>Python</option>
+                    <option value='cpp'>CPP</option>
+                    <option value='c'>C</option>
+                    <option value='c#'>C#</option>
+                    <option value='php'>PHP</option>
                 </select>
 
                 <button

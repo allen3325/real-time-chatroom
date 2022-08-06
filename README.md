@@ -4,7 +4,8 @@
 1. clone this project
 2. run npm install in backend and frontend folder
 3. fill the info (use HarperDB) in .env.example and remove .example
-4. run npm start in frontend and backend folder
+4. run npm start in frontend folder
+5. run npm run dev in backend folder
 
 # Techniques in this project
 - frontend: React
